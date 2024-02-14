@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/Title_logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--=============== 3D ===============-->
+    <script type="module">
+      import * as THREE from "https://cdn.skypack.dev/three@110.0.1/build/three.module.js";
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+    <title>Aravind's Scriptarium</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-circle">B</span>
+
+          <span class="nav__logo-name">Aravind.</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
+
+          <h3 class="nav__name">Aravind</h3>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <h1 class="home__name">Aravind</h1>
+
+          <div class="home__perfil">
+            <div class="home__image">
+              <img src="assets/img/me.jpg" alt="image" class="home__img" />
+              <div class="home__shadow"></div>
+
+              <img
+                src="assets/img/curved-arrow.svg"
+                alt=""
+                class="home__arrow"
+              />
+              <img
+                src="assets/img/random-lines.svg"
+                alt=""
+                class="home__line"
+              />
+
+              <div class="geometric-box"></div>
+            </div>
+
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/__arvi_01/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aravind-b-a698a4220/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+
+              <a
+                href="https://github.com/Aravind1908"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__info">
+            <p class="home__description">
+              <b>Frontend Developer</b>, with knowledge in web development and
+              design. <br /><br /><br />
+            </p>
+
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <span class="home__scroll-text">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span>About Me.</span>
+          </h2>
+
+          <div class="about__perfil">
+            <div class="about__image">
+              <img src="assets/img/me-3.png" alt="image" class="about__img" />
+
+              <div class="about__shadow"></div>
+
+              <div class="geometric-box"></div>
+              <img
+                src="assets/img/random-lines.svg"
+                alt=""
+                class="about__line"
+              />
+              <div class="about__box"></div>
+            </div>
+          </div>
+
+          <div class="about__info">
+            <p class="about__description">
+              Passionate about creating Web Pages with <b>UI/UX</b>, User
+              Interface,familiar with <b>frameworks</b>, databases, version
+              control, and API integration .
+            </p>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <b>My Skills Are:</b> HTML, CSS, JavaScript, React, Git &
+                GitHub, Bootstrap, Node, MongoDB & Sql.
+              </li>
+            </ul>
+
+            <div class="about__buttons">
+              <a href="#contact" class="button">
+                <i class="ri-send-plane-line"></i> Contact Me
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aravind-b-a698a4220/"
+                target="_blank"
+                class="button__ghost"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="about section section" id="skills">
+        <h2 class="section__title section__title-2">Skills</h2>
+
+        <div class="skills__container container grid section__border">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i> Languages known
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/skills/html-1.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">HTML</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/skills/css-3.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">CSS</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/skills/logo-javascript.svg"
+                    alt="skills image"
+                  />
+                </div>
+
+                <h3 class="skills__name">JavaScript</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/skills/react-2.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">React</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/skills/mongodb-icon.svg"
+                    alt="skills image"
+                  />
+                </div>
+
+                <h3 class="skills__name">MongoDB</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/skills/bootstrap-5-1.svg"
+                    alt="skills image"
+                  />
+                </div>
+
+                <h3 class="skills__name">Bootstrap</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+        <h2 class="section__title-2">
+          <span>Services.</span>
+        </h2>
+
+        <div class="services__container container grid">
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-layout-4-line"></i>
+              </div>
+
+              <h2 class="services__title">User Interface (UI)</h2>
+
+              <p class="services__description">
+                Implementing the visual elements of a website or application,
+                including layouts, buttons, forms, and other interactive
+                elements.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-code-box-line"></i>
+              </div>
+
+              <h2 class="services__title">Web Appliction</h2>
+
+              <p class="services__description">
+                Build web applications using the reusable, dynamic, component
+                driven architecture of React Js.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-smartphone-line"></i>
+              </div>
+
+              <h2 class="services__title">Responsive Web Design</h2>
+
+              <p class="services__description">
+                Ensuring that the website or application looks and functions
+                well on various devices and screen sizes
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Projects.</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/project-1.png"
+                alt="image"
+                class="projects__img"
+              />
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">ON-live</h3>
+              <h2 class="projects__title">Green garden Website</h2>
+
+              <p class="projects__description">
+                My static front-end website showcases elegant design and
+                seamless user experience, highlighting my proficiency in
+                creating visually appealing and responsive web interfaces
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/Aravind1908/GO-Green.git"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> Code
+              </a>
+
+              <a
+                href="https://greengarden19.netlify.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/project-2.png"
+                alt="image"
+                class="projects__img"
+              />
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">React-App</h3>
+              <h2 class="projects__title">Trip Planner</h2>
+
+              <p class="projects__description">
+                Project that you carry out in the design and structure of the
+                layout, showing the design with the react component.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/Aravind1908/trip_selection.git"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> Code
+              </a>
+
+              <a
+                href="https://trip-planner1908.netlify.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/project-3.png"
+                alt="image"
+                class="projects__img"
+              />
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Demo-site</h3>
+              <h2 class="projects__title">Porto Insurance Website</h2>
+
+              <p class="projects__description">
+                Project that you carry out the demo of the insurance website
+                with the proper layout.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> Code
+              </a>
+
+              <a
+                href="https://porto-insurance.netlify.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+          <!-- 
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
+
+                     <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Website</h3>
+                     <h2 class="projects__title">Coffee Delivery Website</h2>
+
+                     <p class="projects__description">
+                        Project that you carry out in the design 
+                        and structure of the layout, showing the 
+                        design at the client's request.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+
+                     <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                     </a>
+                  </div>
+               </article> -->
+          <!-- 
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
+
+                     <a href="#" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Website</h3>
+                     <h2 class="projects__title">Barbershop Website</h2>
+
+                     <p class="projects__description">
+                        Project that you carry out in the design 
+                        and structure of the layout, showing the 
+                        design at the client's request.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+
+                     <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                     </a>
+                  </div>
+               </article> -->
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Contact Me.</span>
+            </h2>
+
+            <p class="contact__description-2">
+              <b>PHONE</b><br />+91 8148832391 <br />
+              <br />
+              <b>CITY</b> <br />
+              Coimbatore<br /><br />
+              <b>MAIL</b><br />aravindbabu390@gmail.com
+            </p>
+
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="contact__mail">
+            <form action="" class="contact__form" id="contact-form">
+              <!-- contact__title -->
+
+              <div class="contact__box">
+                <p class="contact_para">
+                  " Crafting digital wonders with a touch of flair, I turn
+                  concepts into vibrant realities in the realm of the web."
+                </p>
+              </div>
+
+              <svg
+                class="blob-motion"
+                id="visual"
+                viewBox="0 0 960 540"
+                width="520"
+                height="340"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+              >
+                <defs>
+                  <!-- Linear Gradient -->
+                  <linearGradient
+                    id="gradient1"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      id="stop1"
+                      stop-color="hsl(14, 80%, 50%)"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="stop-color"
+                        values=""
+                        dur="5s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                    <stop
+                      offset="33%"
+                      id="stop2"
+                      stop-color="hsl(0, 0%, 30%)"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="stop-color"
+                        values=""
+                        dur="5s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                    <stop
+                      offset="66%"
+                      id="stop3"
+                      stop-color="hsl(0, 0%, 70%)"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="stop-color"
+                        values=""
+                        dur="5s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                    <stop
+                      offset="100%"
+                      id="stop4"
+                      stop-color="hsl(14, 80%, 50%)"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="stop-color"
+                        values=""
+                        dur="5s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                  </linearGradient>
+                </defs>
+
+                <g transform="translate(450.7256843113689 283.4942824330989)">
+                  <path
+                    id="blob1"
+                    d="M148.7 -134.9C193.7 -103.7 231.9 -51.9 232.4 0.6C233 53 196.1 106.1 151.1 128.6C106.1 151.1 53 143 -4.4 147.4C-61.8 151.8 -123.5 168.5 -151.2 146C-178.8 123.5 -172.4 61.8 -172.8 -0.4C-173.1 -62.5 -180.3 -124.9 -152.6 -156.1C-124.9 -187.3 -62.5 -187.1 -5.3 -181.8C51.9 -176.5 103.7 -166 148.7 -134.9"
+                    fill="url(#gradient1)"
+                  ></path>
+                </g>
+
+                <g
+                  transform="translate(509.54377535978017 281.49390864595887)"
+                  style="visibility: hidden"
+                >
+                  <path
+                    id="blob2"
+                    d="M115.4 -137.9C137.9 -92.9 136.4 -46.4 133.6 -2.8C130.8 40.8 126.6 81.6 104.1 118.4C81.6 155.2 40.8 188.1 -8.4 196.5C-57.5 204.8 -115 188.7 -151 151.9C-187 115 -201.5 57.5 -190.8 10.7C-180.1 -36.1 -144.1 -72.1 -108.1 -117.1C-72.1 -162.1 -36.1 -216.1 5.2 -221.2C46.4 -226.4 92.9 -182.9 115.4 -137.9"
+                    fill="url(#gradient1)"
+                  ></path>
+                </g>
+
+                <script type="text/javascript">
+                  // Function to generate random HSL color function
+                  getRandomColor() { const colors = [ 'hsl(14, 80%, 50%)',
+                  'hsl(0, 0%, 30%)', 'hsl(0, 0%, 70%)' ]; return
+                  colors[Math.floor(Math.random() * colors.length)]; } //
+                  function updateGradient() { const stop1 =
+                  document.getElementById('stop1'); const stop2 =
+                  document.getElementById('stop2'); const stop3 =
+                  document.getElementById('stop3'); const stop4 =
+                  document.getElementById('stop4');
+                  stop1.children[0].setAttribute('values', `${getRandomColor()};
+                  ${getRandomColor()}; ${getRandomColor()};
+                  ${getRandomColor()}`);
+                  stop2.children[0].setAttribute('values', `${getRandomColor()};
+                  ${getRandomColor()}; ${getRandomColor()};
+                  ${getRandomColor()}`);
+                  stop3.children[0].setAttribute('values', `${getRandomColor()};
+                  ${getRandomColor()}; ${getRandomColor()};
+                  ${getRandomColor()}`);
+                  stop4.children[0].setAttribute('values', `${getRandomColor()};
+                  ${getRandomColor()}; ${getRandomColor()};
+                  ${getRandomColor()}`); } // Initial update updateGradient();
+                  // Set interval to update gradient every 5 seconds
+                  setInterval(updateGradient, 5000);
+                </script>
+              </svg>
+
+              <script>
+                const tween = KUTE.fromTo(
+                  "#blob1",
+                  { path: "#blob1" },
+                  { path: "#blob2" },
+                  { repeat: 999, duration: 3000, yoyo: true }
+                ).start();
+              </script>
+            </form>
+          </div>
+
+          <div class="contact__social">
+            <img
+              src="assets/img/curved-arrow.svg"
+              alt=""
+              class="contact__social-arrow"
+            />
+
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">
+                  Does not send emails
+                </p>
+
+                <p class="contact__social-description-2">
+                  Write me on my social networks
+                </p>
+              </div>
+
+              <div class="contact__social-links">
+                <a
+                  href="https://www.instagram.com/__arvi_01/"
+                  class="contact__social-link"
+                  target="_blank"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/aravind-b-a698a4220/"
+                  class="contact__social-link"
+                  target="_blank"
+                >
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <span class="footer__copy">
+          &#169; All Rights Reserved By
+          <a href="#">ARAVIND.</a>
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
